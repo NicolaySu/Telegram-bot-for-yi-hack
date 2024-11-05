@@ -10,6 +10,8 @@ pip install aiogram requests opencv-python-headless
 
 
 
+
+
 Telegram bot Python for yi-hack cameras control
 Libraries are required for operation: aiogram, requests, opencv.
 pip install aiogram requests opencv-python-headless
