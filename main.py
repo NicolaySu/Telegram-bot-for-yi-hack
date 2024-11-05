@@ -14,7 +14,7 @@ from aiogram.types import Message, FSInputFile, URLInputFile, Update
 from aiogram.utils.keyboard import ReplyKeyboardBuilder
 
 # Конфигурация бота
-TOKEN = '7311734191:AAFYVjBgvucNKPYArbSrHFrNJwtX86YI_ww'
+TOKEN = '*******'
 bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode='html'))
 dp = Dispatcher()
 
@@ -39,7 +39,7 @@ VIDEO_FILE_2 = 'video2.mp4'
 video_queue = asyncio.Queue()  # Очередь для хранения видеофайлов
 streaming = False  # Флаг для хранения текущего состояния стрима
 
-allowed_user = {1376107888}  # allowed users
+allowed_user = {*******}  # allowed users
 
 
 class UserFilterMiddleware(BaseMiddleware):
@@ -59,7 +59,6 @@ builder.button(text="/Presets")
 builder.button(text="/Photos")
 builder.button(text="/Streams")
 builder.button(text="/Settings")
-# builder.button(text="/reboot")
 builder.adjust(2)
 
 moves = ReplyKeyboardBuilder()
@@ -311,14 +310,6 @@ async def cmd_led(message: Message):
 @dp.message(Command('Rotate'))
 async def cmd_rotate(message: Message):
     await message.answer('Ok', reply_markup=rotate.as_markup())
-
-
-'''
-@dp.message(Command('reboot'))
-async def cmd_reboot(message: Message):
-    await asyncio.sleep(5)
-    subprocess.run(["sudo", "reboot"])
-'''
 
 
 # Обработчик команды /move
