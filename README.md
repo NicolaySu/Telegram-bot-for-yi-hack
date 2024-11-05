@@ -1,5 +1,6 @@
 # Telegram-bot-for-yi-hack
 
+RU - 
 Telegram-бот Python для управления камерами yi-hack
 Для работы необходимы библиотеки: aiogram, requests, opencv.
 pip install aiogram requests opencv-python-headless
@@ -7,11 +8,9 @@ pip install aiogram requests opencv-python-headless
 Этот бот работает с камерами с прошивкой YI-Hack, должен работать на машине в той же сети, что и камера.
 В переменную TOKEN вприсать токен бота, allowed_users - свой телеграм id(к боту имеют доступ только те пользователи, чьи id прописанны в списке). Если несколько пользователей - через запятую.
 Узнать свой ID - @myidbot
+#
 
-
-
-
-
+EN - 
 Telegram bot Python for yi-hack cameras control
 Libraries are required for operation: aiogram, requests, opencv.
 pip install aiogram requests opencv-python-headless
